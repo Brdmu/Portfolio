@@ -38,9 +38,15 @@ header a {
   color: whitesmoke;
   font-size: 18px;
   letter-spacing: 2px;
-  border: solid 2px;
+  border: solid 2px whitesmoke;
   border-radius: 80px;
   padding: 6px 12px;
+  transition: 0.3s ease-in-out;
+}
+
+header a:hover {
+  background-color: whitesmoke;
+  color: #1b1e20;
 }
 
 .preview {
@@ -51,6 +57,12 @@ header a {
   background-image: url("../images/test.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  background-position: center;
+}
+
+.preview:hover {
+  background-size: 103%;
 }
 
 .preview h2 {
@@ -62,11 +74,40 @@ header a {
   align-items: center;
 }
 
-.preview img {
-  position: absolute;
-  z-index: -1;
-  width: 120vw;
-  height: 60vh;
-  object-fit: cover;
-  filter: blur(5px);
+.bio {
+  max-width: 900px;
+  font-size: 18px;
+  margin: 30px auto;
+}
+
+.inWork {
+  display: flex;
+  justify-content: center;
+}
+
+.inWorkContainer {
+  background-color: #2a2e3d;
+  padding: 27px;
+  border: 6px solid #1c1c29;
+  border-radius: 6px;
+}
+
+.inWork h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.features {
+  text-align: center;
+  padding: 21px 15px;
+}
+.features h3 {
+  font-size: 21px;
+}
+.featuresContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.featureCard {
+  
 }
