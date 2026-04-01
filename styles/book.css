@@ -1,4 +1,4 @@
-.readNow {
+.BookSection {
   text-align: center;
   padding: 30px;
   display: flex;
@@ -6,16 +6,26 @@
   flex-wrap: wrap;
 }
 
-.readNow h1 {
-  flex-basis: 100%;
+.hide {
+  display: none;
 }
 
-.readNowContainer {
+main {
+  min-height: 72vh;
+}
+
+.BookSection h2 {
+  flex-basis: 100%;
+  padding-bottom: 21px;
+}
+
+.BookSectionContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
-.readNowCard {
+.BookSectionCard {
   position: relative;
   max-width: 350px;
   border: 3px solid whitesmoke;
@@ -25,14 +35,14 @@
   transition: 0.3s ease-in-out;
 }
 
-.readNowCard img {
+.BookSectionCard img {
   filter: contrast(70%) brightness(0.3);
   width: 100%;
   border-radius: 15px;
   background-color: white;
 }
 
-.readNowCardOverlay {
+.BookSectionCardOverlay {
   padding: 30% 9px;
   position: absolute;
   left: 0;
@@ -46,21 +56,21 @@
   z-index: 1;
 }
 
-.readNowCardShort {
+.BookSectionCardShort {
   background-color: rgba(255, 255, 255, 1);
   color: black;
   padding: 6px;
 }
 
-.readNowCardOverlay p {
+.BookSectionCardOverlay p {
   font-size: 18px;
 }
 
-.readNowCardPreview {
+.BookSectionCardPreview {
   transition: 0.3s ease-in-out;
 }
 
-.readNowCardBack {
+.BookSectionCardBack {
   position: absolute;
   top: 0;
   left: 0;
@@ -71,16 +81,46 @@
   padding: 6px;
   flex-direction: column;
   gap: 15px;
-  color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgba(52, 58, 64, 0.75);
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
 
-
-.readNowCard:hover .readNowCardPreview {
-  opacity: 0;
+.BookSectionCard:hover .BookSectionCardPreview {
+  opacity: 0.15;
 }
 
-.readNowCard:hover .readNowCardBack {
+.BookSectionCard:hover .BookSectionCardBack {
   opacity: 1;
+}
+
+/* Filters */
+
+.filters {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+.pressed {
+  color: #343a40 !important;
+  background-color: whitesmoke !important;
+  border: #212529 !important;
+}
+
+.filterBut {
+  background-color: inherit;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border: solid 2px whitesmoke;
+  border-radius: 80px;
+  padding: 6px 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.filterBut:hover {
+  scale: 1.06;
 }
