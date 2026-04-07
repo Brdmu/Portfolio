@@ -6,10 +6,6 @@
   flex-wrap: wrap;
 }
 
-.hide {
-  display: none;
-}
-
 main {
   min-height: 72vh;
 }

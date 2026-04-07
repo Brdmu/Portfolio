@@ -11,6 +11,10 @@ body {
   padding-top: 68px;
 }
 
+.hide {
+  display: none;
+}
+
 /* Header */
 
 header {
