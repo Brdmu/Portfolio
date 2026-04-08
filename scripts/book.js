@@ -42,6 +42,7 @@ async function renderLibrary() {
     btn.addEventListener("click", () => {
       sect.classList.toggle("hide");
       btn.classList.toggle("pressed");
+      console.log('111');
     });
   });
 }

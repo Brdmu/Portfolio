@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "photoCount": 4,
+    "title": "Паразит",
+    "note": "Работа вдохновленная персонажем из одноимённого аниме.",
+    "image1": "../images/craftPhotos/Parasite/Parasit1.jpg",
+    "image2": "../images/craftPhotos/Parasite/Parasit2.jpg",
+    "image3": "../images/craftPhotos/Parasite/Parasit3.jpg",
+    "image4": "../images/craftPhotos/Parasite/Parasit4.jpg"
+  },
+    {
+    "id": 2,
+    "photoCount": 4,
+    "title": "Арбуз и сигарета",
+    "note": "Фигурка созданная после просмотра аниме 'Обычный роман в Коулуне'.",
+    "image1": "../images/craftPhotos/Ashtray/Ashtray1.jpg",
+    "image2": "../images/craftPhotos/Ashtray/Ashtray2.jpg",
+    "image3": "../images/craftPhotos/Ashtray/Ashtray3.jpg",
+    "image4": "../images/craftPhotos/Ashtray/Ashtray4.jpg"
+  }
+]

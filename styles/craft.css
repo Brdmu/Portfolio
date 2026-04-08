@@ -47,7 +47,7 @@ img {
   justify-content: center;
 }
 
-.myWorks h2{
+.myWorks h2 {
   padding-bottom: 15px;
   font-size: 36px;
   flex-basis: 100%;
@@ -66,19 +66,55 @@ img {
   background-color: whitesmoke;
   border-radius: 15px;
   padding: 9px;
-}
-
-.craftCardContainer {
+  transition: 0.3s ease-in-out;
   display: grid;
+  gap: 9px;
+  max-width: 330px;
+  max-height: 445px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 9px;
   grid-template-areas:
     "a a a b"
     "a a a c"
     "a a a d"
     "text text text text";
 }
+
+.photo4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "a a a b"
+    "a a a c"
+    "a a a d"
+    "text text text text";
+}
+
+.photo3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "a a b"
+    "a a c"
+    "text text text";
+}
+
+.photo2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "a a b"
+    "a a ."
+    "text text text";
+}
+
+.photo1 {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "a"
+    "text";
+}
+
 
 .big-photo {
   grid-area: a;
@@ -108,4 +144,9 @@ img {
 .card-text {
   grid-area: text;
   color: black;
+}
+
+.craftCard:hover {
+  scale: 1.025;
+  box-shadow: 3px 3px 3px 3px #25292e;
 }
