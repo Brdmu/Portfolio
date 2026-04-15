@@ -5,7 +5,7 @@ Fancybox.bind("[data-fancybox]", {
 async function craftRender() {
   const response = await fetch("../data/craft.json");
   const data = await response.json();
-  const worksContainer = document.querySelector(".myWorksContainer");
+  const worksContainer = document.querySelector(".hobbyContainer");
 
   data.forEach((element) => {
     const card = document.createElement("div");

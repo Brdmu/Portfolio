@@ -1,11 +1,3 @@
-.BookSection {
-  text-align: center;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 main {
   min-height: 72vh;
 }
@@ -13,7 +5,6 @@ main {
 .hide {
   display: none;
 }
-
 
 /* Book-preview */
 
@@ -23,36 +14,20 @@ main {
   background-size: cover;
 }
 
-.bookPreviewBlur {
-  backdrop-filter: blur(5px) saturate(90%);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* BookSection */
+.BookSection {
   text-align: center;
   padding: 30px;
-  text-shadow: 2px 2px 0 black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
 }
-
-.bookPreviewBlur h1 {
-  font-size: 39px;
-  padding-bottom: 12px;
-}
-
-.bookPreviewBlur p {
-  font-size: 20px;
-}
-
-.bookPreviewContainer {
-  max-width: 1110px;
-}
-
-/* BookSection */
 
 .BookSection h2 {
   flex-basis: 100%;
   padding-bottom: 21px;
+  font-size: 24px;
 }
 
 .BookSectionContainer {
@@ -138,6 +113,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 36px;
+  flex-basis: 100%;
 }
 .pressed {
   color: #343a40 !important;

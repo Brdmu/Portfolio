@@ -237,6 +237,55 @@ footer ul {
   list-style-type: none;
 }
 
+/* Other */
+.previewBlur {
+  backdrop-filter: blur(3px) saturate(90%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  text-shadow: 2px 2px 0 black;
+}
+
+.previewBlur h1 {
+  font-size: 39px;
+  padding-bottom: 12px;
+}
+
+.previewBlur p {
+  font-size: 20px;
+}
+
+.previewContainer {
+  max-width: 1110px;
+}
+
+.hobby {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobby h2 {
+  padding-bottom: 15px;
+  font-size: 36px;
+  flex-basis: 100%;
+}
+
+.hobbyContainer {
+  max-width: 1110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Phone */
 @media (width <= 767px) {
   body {
