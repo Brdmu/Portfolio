@@ -150,3 +150,13 @@ img {
   scale: 1.025;
   box-shadow: 3px 3px 3px 3px #25292e;
 }
+
+@media (width <= 767px) {
+  .myWorksContainer {
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap; 
+  }
+  
+
+}
